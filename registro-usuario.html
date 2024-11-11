@@ -9,6 +9,32 @@
     <title>Gleam and Glow-Registrarse</title>
 </head>
 <body>
-    
+    <div class="bloque">
+        <h1>¡Registrate!</h1>
+        <form id="registerForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required placeholder="Luis">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" required placeholder="Miranda">
+
+            <label for="genero">Género:</label>
+            <select id="genero" required>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" required placeholder="123@gmail.com">
+
+            <label for="register-password">Contraseña:</label>
+            <input type="password" id="password" required placeholder="Unica y facil de recordar">
+
+            <button type="button" onclick="">Registrarme</button>
+        </form>
+        <p id="message" class="message"></p>
+        <p>¿Ya te registraste anteriormente?<a href="inicio-usuario.html">¡Ingresa aqui!</a></p>
+    </div>
 </body>
 </html>
