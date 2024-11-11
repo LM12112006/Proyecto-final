@@ -1,0 +1,172 @@
+/*Estilo al body en general*/
+body{
+    font-family: sans-serif;
+    background-color: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+/*Estilos para el encabezado*/
+header{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.head img{
+    width: 5em;
+}
+.head{
+    box-sizing: border-box;
+    width: 80%;
+    padding-left:8em;
+}
+#nombre-empresa{
+color: #fab;
+margin: 0;
+}
+#auth-buttons{
+box-sizing: border-box;
+margin: auto;
+padding-bottom:50px;
+}
+#auth-buttons button{
+    background-color: #fab;
+    font-weight: bold;
+    border: none;
+    color: #444;
+    border-radius: 10px;
+    margin: 0 5px 0 0;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 #444;
+}
+#auth-buttons button:hover{
+    font-weight: bold;
+    background-color: #eee;
+    color: #fab;
+}
+
+/*Estilos para la seccion de el mosaico*/
+main{
+    width: 100%;
+    margin: 20px 0 20px 0;
+}
+#bloque-1, #bloque-2{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products{
+    margin: 30px;
+    width: 5em;
+}
+.products:hover{
+    transition: transform 0.5s;
+    transform: scale(1.25);
+}
+.ir{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ir a{
+    box-shadow: 0 0 3px 0 #444;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #fab;
+    text-decoration: none;
+    color: #444;
+}
+.ir a:hover{
+    font-weight: bold;
+    background-color: #eee;
+    color: #fab;
+}
+
+/*Estilo para el banner*/
+#banner{
+    background-image: url("../Img/banner.jpeg");
+    width: 100%;
+    height: 50em;
+    background-size: cover;
+    margin: 20px 0 0 0
+}
+#banner h2{
+    font-size: 2.5em;
+    display: flex;
+    justify-content: right;
+    padding: 8em 0.5em 0 0;
+}
+
+/*Estilo para la seccion de informacion*/
+.info{
+    background: linear-gradient(#fab,#ddd,#fab, #ddd);
+    padding: 10px;
+}
+.info div{
+    box-sizing: content-box;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #444;
+}
+
+/*Estilos para la seccion de reseñas*/
+.Reseñas{
+    padding: 10px;
+    background:linear-gradient(#ddd,#fab,#ddd,#fab)
+}
+
+.Reseñas h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.Reseña-tarjeta{
+    box-sizing: content-box;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    background-color: #eee;
+    border-radius: 30px;
+    box-shadow: 0 0 10px 0 #444;
+    margin-bottom:30px;
+}
+.Reseña-tarjeta h3{
+    margin-top: 0;
+}
+
+/*Estilos para el pie de pagina*/
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+.derechos{
+    font-weight: bold;
+    padding-left: 15px;
+    text-align: center;
+}
+.derechos img{
+    width: 5em;
+}
+
+.redes{
+padding: 20px 40px 0 0;
+}
+.redes ul{
+display: flex;
+justify-content: center;
+}
+.redes ul li{
+list-style: none;
+margin-right: 40px;
+}
+.redes img:hover{
+    transition: transform 0.5s;
+    transform: scale(1.5);
+}

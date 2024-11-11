@@ -11,61 +11,63 @@
 <body>
     <!--Encabezado con el nombre y logo de la empresa, botones de inicio y registro de sesion, y seccion secreta de bienvenida al usuario en caso de haver iniciado sesion-->
     <header>
-        <div>
+        <div class="head">
             <img src="assest/Img/logo.png" alt="Logo">
-            <h1 id="Nombre-empresa">Gleam and Glow</h1>
+            <h1 id="nombre-empresa">Gleam and Glow</h1>
         </div>
         <div id="auth-buttons">
             <button id="inicio">Ingresar</button>
             <button id="registro">Registrarse</button>
         </div>
-        <div id="user-area">
-            <p>hola<span id="username-display">!</span></p>
+        <div id="user-area" style="display: none;">
+            <p>Hola<span id="username-display">!</span></p>
             <button><img src="assest/Img/Cerrar sesion.svg" alt="Cerrar sesion"></button>
         </div>
     </header>
     <!--Seccion principal con un mosaico mostrando los productos mas relevantes y un boton de llamado a la accion para explorar mas productos-->
-    <main>
-        <section class="Mosaico-productos">
-            <div><img src="assest/Img/mosaico/producto-mosaico-1.png" alt="Imagen ilustrativa" class="products"></div>
-            <div><img src="assest/Img/mosaico/producto-mosaico-2.png" alt="Imagen ilustrativa" class="products"></div>
-            <div><img src="assest/Img/mosaico/producto-mosaico-3.png" alt="Imagen ilustrativa" class="products"></div>
-            <div><img src="assest/Img/mosaico/producto-mosaico-4.png" alt="Imagen ilustrativa" class="products"></div>
-            <div><img src="assest/Img/mosaico/producto-mosaico-5.png" alt="Imagen ilustrativa" class="products"></div>
-            <div><img src="assest/Img/mosaico/producto-mosaico-6.png" alt="Imagen ilustrativa" class="products"></div>
-            <div><img src="assest/Img/mosaico/producto-mosaico-7.png" alt="Imagen ilustrativa" class="products"></div>
-            <div><img src="assest/Img/mosaico/producto-mosaico-8.png" alt="Imagen ilustrativa" class="products"></div>
-        </section>
-        <button><a href="productos.html">Explorar catalogo</a></button>
+    <main class="mosaico-productos">
+            <div id="bloque-1">
+            <img src="assest/Img/mosaico/producto-mosaico-1.jpg" alt="Imagen ilustrativa" class="products">
+            <img src="assest/Img/mosaico/producto-mosaico-2.png" alt="Imagen ilustrativa" class="products">
+            <img src="assest/Img/mosaico/producto-mosaico-3.png" alt="Imagen ilustrativa" class="products">
+            <img src="assest/Img/mosaico/producto-mosaico-4.png" alt="Imagen ilustrativa" class="products">                
+            </div>
+            <div id="bloque-2">
+            <img src="assest/Img/mosaico/producto-mosaico-5.png" alt="Imagen ilustrativa" class="products">
+            <img src="assest/Img/mosaico/producto-mosaico-6.png" alt="Imagen ilustrativa" class="products">
+            <img src="assest/Img/mosaico/producto-mosaico-7.png" alt="Imagen ilustrativa" class="products">
+            <img src="assest/Img/mosaico/producto-mosaico-8.png" alt="Imagen ilustrativa" class="products">                
+            </div>
+            <div class="ir"><a href="productos.html">Explorar catalogo</a></div>
     </main>
     <!--Seccion secundaria, donde se mostrara informacion de la empresa, quienes somos, mision y vision-->
     <aside>
-        <div id="Banner">
-            <span>Conocenos un poco mas...</span>
+        <div id="banner">
+            <h2>Conocenos un poco mas...</h2>
         </div>
-        <section class="Info">
-                <div id="Quienes-somos">
-                    <h2>¿Quienes somos?</h2>
+        <section class="info">
+                <div id="quienes-somos">
+                    <h3>¿Quienes somos?</h3>
                     <p>En Gleam and Glow, somos apasionados por la belleza y el cuidado personal. Nuestra misión es realzar la belleza natural de cada persona, ofreciendo productos de maquillaje de alta calidad que inspiran confianza y creatividad.</p>
                 </div>
                 <div id="a-que-nos-dedicamos">
-                    <h2>¿A que nos dedicamos?</h2>
+                    <h3>¿A que nos dedicamos?</h3>
                     <p>Nos dedicamos a crear una experiencia de belleza única y personalizada. Desde el desarrollo de productos innovadores hasta la atención al cliente excepcional, cada aspecto de nuestra empresa está diseñado para satisfacer las necesidades y deseos de nuestros clientes.</p>
                 </div>
-                <div id="¿Que-vendemos?">
-                    <h2>¿Que vendemos?</h2>
+                <div id="que-vendemos?">
+                    <h3>¿Que vendemos?</h3>
                     <p>Ofrecemos una amplia gama de productos de maquillaje, incluyendo bases, sombras de ojos, labiales, y mucho más. Todos nuestros productos están formulados con ingredientes de alta calidad, asegurando resultados duraderos y un acabado impecable.</p>
                 </div>
-                <div id="Nuestra-filosofa">
-                    <h2>Nuestra filosofia</h2>
+                <div id="nuestra-filosofa">
+                    <h3>Nuestra filosofia</h3>
                     <p>Creemos que el maquillaje es una forma de expresión personal y una herramienta para empoderar a las personas. En Gleam and Glow, nos esforzamos por crear productos que no solo embellecen, sino que también cuidan y protegen la piel.</p>
                 </div>
-                <div id="Mision">
-                    <h2>Mision</h2>
+                <div id="mision">
+                    <h3>Mision</h3>
                     <p>En Gleam and Glow, nuestra misión es empoderar a las personas a través de la belleza. Nos dedicamos a ofrecer productos de maquillaje de alta calidad que realzan la belleza natural y fomentan la autoexpresión. Creemos en la importancia de sentirse bien por dentro y por fuera, y trabajamos incansablemente para proporcionar productos que no solo embellecen, sino que también cuidan y protegen la piel.</p>
                 </div>
-                <div id="Vision">
-                    <h2>Vision</h2>
+                <div id="vision">
+                    <h3>Vision</h3>
                     <p>Nuestra visión es ser una marca líder en la industria del maquillaje, reconocida por nuestra innovación, calidad y compromiso con la sostenibilidad. Aspiramos a crear una comunidad global de amantes de la belleza que confíen en nuestros productos para expresar su individualidad y sentirse seguros en su propia piel. En Gleam and Glow, imaginamos un mundo donde la belleza es accesible para todos y cada persona puede brillar con luz propia.</p>
                 </div>
         </section>
@@ -73,6 +75,7 @@
     <!--Seccion principal que mostrara las reseñas de algunos clientes-->
     <main>
         <section class="Reseñas">
+            <h2>Algunos de nuestros clientes:</h2>
             <div class="Reseña-tarjeta">
                 <img src="assest/Img/usuario.svg" alt="Reseñas de cliente">
                 <h3>Maria Lopez</h3>
@@ -127,14 +130,14 @@
     </main>
     <!--Pie de pagina con el logo de la empresa, derechos de autor, y apartado de redes de contacto-->
     <footer>
-        <div>
+        <div class="derechos">
             <img src="assest/Img/logo.png" alt="Logo">
-            <span>
+            <p>
                 © Gleam and Glow 2024, Todos los derechos reservados
-            </span>
+            </p>
         </div>
-        <div>
-            <span>Siguenos y descubre cosas nuevas cada dia</span>
+        <div class="redes">
+            <p>Siguenos y descubre cosas nuevas cada dia:</p>
             <ul>
                 <li><a href="https://instagram.com" target="_blank"><img src="assest/Img/instagram.svg" alt="Redes de contacto" class="Redes"></a></li>
                 <li><a href="https://facebook.com" target="_blank"><img src="assest/Img/facebook.svg" alt="Redes de contacto" class="Redes"></a></li>
