@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: linear-gradient(#ddd,#fab,#ddd,#fab,#ddd,#fab)
+}
+
+/*Estilos para el encabezado*/
+header{
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    height:125px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ddd;
+}
+.head img{
+    width: 4em;
+}
+.head{
+    box-sizing: border-box;
+    width: 80%;
+    padding-left:8em;
+}
+#nombre-empresa{
+color: #fab;
+margin: 0;
+}
+#auth-buttons{
+box-sizing: border-box;
+margin: auto;
+}
+#auth-buttons button{
+    background-color: #fab;
+    font-weight: bold;
+    border: none;
+    color: #444;
+    border-radius: 10px;
+    margin: 0 5px 0 0;
+    padding: 10px;
+    box-shadow: 0 0 3px 0 #444;
+}
+#auth-buttons button:hover{
+    font-weight: bold;
+    background-color: #eee;
+    color: #fab;
+    cursor: pointer;
+}
+/*Estilos para la barra de navegacion*/
+.nav{
+    background-color: #fab; position: fixed; top: 115px;  width: 100%; z-index: 2; box-sizing: border-box;
+}
+nav{
+    box-sizing: border-box;
+    width: 50%;
+    margin: auto;
+    color: #444;
+    font-weight: bold;
+    border-radius: 10px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+.divisor-rostro:hover .subdivisor-rostro, .divisor-labios:hover .subdivisor-labios, .divisor-ojos:hover .subdivisor-ojos {
+    display: block;
+}
+.divisor-labios:hover, .divisor-ojos:hover, .divisor-rostro:hover{
+    cursor: pointer;
+    background-color: #eee;
+    color: #fab;
+    font-weight: bold;
+}
+.subdivisor-labios, .subdivisor-rostro, .subdivisor-ojos{
+    display: none;
+    position: absolute;
+    width: 200px;
+    background-color: #fab;
+    margin-top: 10px;
+}
+.subdivisor-labios a, .subdivisor-rostro a, .subdivisor-ojos a{
+    color: #444;
+    text-decoration: none;
+}
+.subdivisor-labios li:hover, .subdivisor-ojos li:hover, .subdivisor-rostro li:hover{
+background-color: #eee;
+color: #fab;
+}
+
+/*Etilos para las secciones de productos*/
+h2{
+    margin: 0;
+    margin-bottom: 50px;
+    padding-top: 175px;
+    text-align: center;
+}
+.bloque{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+/*Estilos para la tarjeta de los productos*/
+.tarjeta{
+    position: relative;
+    width: 250px;
+    height: auto;
+}
+.tarjeta img{
+    width: 100%;
+    border-radius: 20px;
+}
+.descripcion{
+    font-size: 1.25em;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align:center
+}
+.tarjeta:hover .descripcion{
+    opacity: 1;
+}
+
+/*Estilos para el pie de pagina*/
+footer{
+    margin-top: 50px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+.derechos{
+    font-weight: bold;
+    padding-left: 15px;
+    text-align: center;
+}
+.derechos img{
+    width: 5em;
+}
+
+.redes{
+padding: 20px 40px 0 0;
+}
+.redes ul{
+display: flex;
+justify-content: center;
+}
+.redes ul li{
+list-style: none;
+margin-right: 40px;
+}
+.redes img:hover{
+    transition: transform 0.5s;
+    transform: scale(1.5);
+}
