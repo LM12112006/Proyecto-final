@@ -53,7 +53,7 @@ function register() {
         localStorage.setItem("loggedInUser", correo);
         
         // Redirigir a la página principal
-            window.location.href = "inicio.html";
+            window.location.href = "index.html";
     } else {
         message.textContent = "Correo o contraseña incorrectos";
         message.style.color = "red";
