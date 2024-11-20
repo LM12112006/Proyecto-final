@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assest/Style/inicio.css">
-    <script src="assest/Script/script.js"></script>
     <link rel="icon" href="assest/Img/logo.png" type="favicon/png">
     <title>Gleam and Glow-inicio</title>
 </head>
@@ -15,14 +14,17 @@
             <img src="assest/Img/logo.png" alt="Logo">
             <h1 id="nombre-empresa">Gleam and Glow</h1>
         </div>
-        <div id="auth-buttons">
-            <button id="inicio">Ingresar</button>
-            <button id="registro">Registrarse</button>
-        </div>
-        <div id="user-area" style="display: none;">
-            <p>Hola<span id="username-display">!</span></p>
-            <button><img src="assest/Img/Cerrar sesion.svg" alt="Cerrar sesion"></button>
-        </div>
+                <!-- Botones de Registro e Inicio de Sesión (solo se muestran si no ha iniciado sesión) -->
+                <div id="auth-buttons">
+                    <button onclick="window.location.href='inicio-usuario.html'" >Iniciar sesion</button>
+                    <button onclick="window.location.href='registro-usuario.html'" >Registrarse</button>
+                </div>
+        
+                <!-- Área del Usuario (solo se muestra si ha iniciado sesión) -->
+                <div id="user-area" style="display: none;">
+                    <p>¡HOLA, <span id="username-display"></span>! <br>Explora y disfruta nuestro catalogo</p>
+                    <button onclick="logout()"><img src="assest/Img/Cerrar sesion.svg" alt="Cerrar sesion"></button>
+                </div>
     </header>
     <!--Seccion principal con un mosaico mostrando los productos mas relevantes y un boton de llamado a la accion para explorar mas productos-->
     <main class="mosaico-productos">
@@ -147,4 +149,5 @@
         </div>
     </footer>
 </body>
+<script src="assest/Script/script.js"></script>
 </html>

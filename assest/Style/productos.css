@@ -51,6 +51,27 @@ margin: auto;
     color: #fab;
     cursor: pointer;
 }
+#user-area{
+    box-sizing: border-box;
+    margin: auto;
+    padding:0 20px 50px 0;
+    font-weight: bold;
+}
+#user-area p{
+    margin-bottom: 5px;
+}
+#user-area button{
+    background-color: #fab;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 0 #444;
+}
+#user-area button:hover{
+    cursor: pointer;
+}
+#username-display{
+    text-transform: uppercase;
+}
 /*Estilos para la barra de navegacion*/
 .nav{
     background-color: #fab; position: fixed; top: 115px;  width: 100%; z-index: 2; box-sizing: border-box;

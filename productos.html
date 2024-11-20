@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assest/Style/productos.css">
-    <script src="assest/Script/script.js"></script>
     <link rel="icon" href="assest/Img/logo.png" type="favicon/png">
     <title>Gleam and Glow-Catalogo</title>
 </head>
@@ -16,12 +15,12 @@
                 <h1 id="nombre-empresa">Gleam and Glow</h1>
             </div>
             <div id="auth-buttons">
-                <button id="inicio">Ingresar</button>
-                <button id="registro">Registrarse</button>
+                <button onclick="window.location.href='inicio-usuario.html'">Ingresar</button>
+                <button onclick="window.location.href='registro-usuario.html'">Registrarse</button>
             </div>
             <div id="user-area" style="display: none;">
-                <p>Hola<span id="username-display">! <br>Disfruta y explora nuestro catalogo</span></p>
-                <button><img src="assest/Img/Cerrar sesion.svg" alt="Cerrar sesion"></button>
+                <p>¡HOLA, <span id="username-display"></span>! <br>Explora y disfruta nuestro catalogo</p>
+                <button onclick="logout()"><img src="assest/Img/Cerrar sesion.svg" alt="Cerrar sesion"></button>
             </div>
         </header>
         <!--barra de navegacion con rutas a las diferentes secciones de productos en la pagina-->
@@ -68,7 +67,7 @@
         <div class="tarjeta">
             <img src="assest/Img/rostro/base 2.png" alt="bases">
             <div class="descripcion">
-                <p>Base ATENEA 1st scene </p>
+                <p>Base ATENEA 1st scene 55ml. Cobertura-alta, acabado semi-mate natural, hidratante, larga duracion y para todo tipo de piel <br>$55.000 </p>
             </div>
         </div>
         <div class="tarjeta">
@@ -286,7 +285,8 @@
                     <p> Corrector Liquido Studio Fix 2horaas de formula liera y cobertura construible. <br>$30.000</p>
                 </div>
             </div>
-            <div class="tarjeta">
+            <div class="tarjeta" style="
+            visibility: hidden;">
                 <img src="assest/Img/rostro/corrector8.png" alt="correctores">
                 <div class="descripcion">
                     <p>Este es dalto, un boludo que solo sabe programar y es muy pajero</p>
@@ -350,7 +350,7 @@
                     <p> Glow play lip balm balsamo labial brillante con color. <br>$30.000 </p>
                 </div>
             </div>
-            <div class="tarjeta">
+            <div class="tarjeta" style="visibility: hidden;">
                 <img src="assest/Img/labios/labial 8.png" alt="labiales">
                 <div class="descripcion">
                     <p>Este es dalto, un boludo que solo sabe programar y es muy pajero</p>
@@ -525,7 +525,7 @@
                     <p>Paleta monocromatica en tonos morados. <br>$17.000 </p>
                 </div>
             </div>
-            <div class="tarjeta">
+            <div class="tarjeta" style="visibility: hidden;">
                 <img src="assest/Img/ojos/sombra 11.png" alt="sombras">
                 <div class="descripcion">
                     <p>Este es dalto, un boludo que solo sabe programar y es muy pajero</p>
@@ -603,4 +603,5 @@
             </div>
         </footer>
 </body>
+<script src="assest/Script/script.js"></script>
 </html>
